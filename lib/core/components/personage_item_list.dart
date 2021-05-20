@@ -24,7 +24,7 @@ class PersonageItemListTile extends StatelessWidget {
             children: [
                Text(
                   personage.getStatus.toUpperCase(),
-                  style: personage.hasAlive ? TextThemes.statusAlive : TextThemes.fieldTileTitle,
+                 style: personage.hasAlive ? TextThemes.statusAlive : TextThemes.statusNotAlive,
                 ),
               Text(
                   personage.fullName,

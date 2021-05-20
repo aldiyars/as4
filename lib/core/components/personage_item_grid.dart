@@ -20,8 +20,7 @@ class PersonageItemGridTile extends StatelessWidget {
           ),
           Text(
               personage.getStatus.toUpperCase(),
-              style: TextThemes.statusAlive,
-
+            style: personage.hasAlive ? TextThemes.statusAlive : TextThemes.statusNotAlive,
           ),
           Text(
               personage.fullName,

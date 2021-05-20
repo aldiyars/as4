@@ -87,7 +87,7 @@ class PersonageHeader extends StatelessWidget {
           ),
           Text(
             personage.getStatus.toUpperCase(),
-            style: personage.hasAlive ? TextThemes.statusAlive : TextThemes.fieldTileTitle,
+            style: personage.hasAlive ? TextThemes.statusAlive : TextThemes.statusNotAlive,
           ),
         ],
       ),
