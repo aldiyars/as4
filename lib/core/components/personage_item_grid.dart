@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class PersonageItemGridTile extends StatelessWidget {
   final Personage personage;
 
-  const PersonageItemGridTile({Key key, this.personage}) : super(key: key);
+  const PersonageItemGridTile({Key key, this.personage,}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,30 +18,19 @@ class PersonageItemGridTile extends StatelessWidget {
             padding: EdgeInsets.only(bottom: 18),
             child: Image.asset(personage.avatar, height: 122,),
           ),
-          Container(
-            height: 16,
-            child: Text(
+          Text(
               personage.getStatus.toUpperCase(),
-              style: TextThemes.status,
-            ),
+              style: TextThemes.statusAlive,
+
           ),
-          Container(
-            height: 20,
-            child: Text(
+          Text(
               personage.fullName,
               style: TextThemes.fullNameLayoutGrid,
             ),
+          Text(
+            "${personage.race}, ${personage.getSex}",
+            style: TextThemes.position,
           ),
-          RichText(
-            text: TextSpan(
-                text: personage.position,
-                style: TextThemes.position,
-                children: [
-                  TextSpan(
-                      text: ", ${personage.getGender}",
-                      style: TextThemes.position)
-                ]),
-          )
         ],
       ),
     );

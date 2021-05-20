@@ -4,20 +4,20 @@ import 'package:accelerator_task_fourth/core/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class WelcomeScreen extends StatefulWidget {
-  const WelcomeScreen({Key key}) : super(key: key);
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key key}) : super(key: key);
 
   @override
-  _WelcomeScreenState createState() => _WelcomeScreenState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
 
     Future.delayed(Duration(seconds: 2), () async {
-      Navigator.pushReplacementNamed(context, Routes.home);
+      Navigator.pushReplacementNamed(context, Routes.home,);
     });
   }
 

@@ -5,12 +5,12 @@ import 'package:flutter/cupertino.dart';
 class PersonageItemListTile extends StatelessWidget {
   final Personage personage;
 
-  const PersonageItemListTile({Key key, this.personage}) : super(key: key);
+  const PersonageItemListTile({Key key, this.personage,}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 12),
+      margin: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
       child: Row(
         children: [
           Padding(
@@ -22,30 +22,18 @@ class PersonageItemListTile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                height: 16,
-                child: Text(
+               Text(
                   personage.getStatus.toUpperCase(),
-                  style: TextThemes.status,
+                  style: personage.hasAlive ? TextThemes.statusAlive : TextThemes.fieldTileTitle,
                 ),
-              ),
-              Container(
-                height: 24,
-                child: Text(
+              Text(
                   personage.fullName,
                   style: TextThemes.fullName,
                 ),
+              Text(
+                "${personage.race}, ${personage.getSex}",
+                style: TextThemes.position,
               ),
-              RichText(
-                text: TextSpan(
-                    text: personage.position,
-                    style: TextThemes.position,
-                    children: [
-                      TextSpan(
-                          text: ", ${personage.getGender}",
-                          style: TextThemes.position)
-                    ]),
-              )
             ],
           )
         ],

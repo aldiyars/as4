@@ -1,13 +1,11 @@
 import 'package:accelerator_task_fourth/core/constants/color_theme.dart';
 import 'package:accelerator_task_fourth/core/data/menu.dart';
-import 'package:accelerator_task_fourth/core/models/entities/menu.dart';
-import 'package:accelerator_task_fourth/core/resources/svg_icons.dart';
-import 'package:accelerator_task_fourth/pageviews/home/episonde/episode_widget.dart';
-import 'package:accelerator_task_fourth/pageviews/home/personage/personage_widget.dart';
-import 'package:accelerator_task_fourth/pageviews/home/settings/settings.dart';
+import 'package:accelerator_task_fourth/screens/home/personage/personage_list.dart';
+import 'package:accelerator_task_fourth/screens/home/settings/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import 'episonde/episode_widget.dart';
 import 'locations/locations_widget.dart';
 
 class HomeScreen extends StatefulWidget {

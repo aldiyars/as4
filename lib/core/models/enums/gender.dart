@@ -1,15 +1,15 @@
-enum Gender { Male, Female, Unknown }
+enum Sex { Male, Female, Unknown }
 
-String getNameGender(Gender gender) {
+String getNameGender(Sex sex) {
   String name;
-  switch (gender) {
-    case Gender.Male:
+  switch (sex) {
+    case Sex.Male:
       name = "Мужской";
       break;
-    case Gender.Female:
+    case Sex.Female:
       name = "Женский";
       break;
-    case Gender.Unknown:
+    case Sex.Unknown:
       name = "Неизвестный";
       break;
     default:

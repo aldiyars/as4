@@ -8,5 +8,5 @@ class ColorPalette{
   static var darkAccent = Color(0xff152A3A);
   static var white = Color(0xffffffff);
   static var red = Color(0xffEB5757);
-
+  static var darGreen = Color(0xff22A2BD);
 }

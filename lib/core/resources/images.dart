@@ -11,4 +11,8 @@ class Images {
   static String get personage_4 => 'assets/images/personage_4.png';
   static String get personage_5 => 'assets/images/personage_5.png';
   static String get personage_6 => 'assets/images/personage_6.png';
+  static String get episode1 => 'assets/images/episode1.png';
+  static String get episode2 => 'assets/images/episode2.png';
+  static String get episode3 => 'assets/images/episode3.png';
+  static String get episode4 => 'assets/images/episode4.png';
 }
