@@ -1,4 +1,4 @@
-# accelerator_task_fourth
+# accelerator
 
 A new Flutter application.
 
